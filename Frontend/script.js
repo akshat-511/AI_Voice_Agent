@@ -11,4 +11,17 @@ async function showAlert(){
 }
 
 
+async function gettts(){
+
+    try {
+        const response = await fetch("http://localhost:8000/tts");
+
+        const data = await response.json();
+
+        console.log(data);
+    } catch (error) {
+        
+    }
+}
+
 
