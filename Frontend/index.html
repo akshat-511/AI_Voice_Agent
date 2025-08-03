@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AI_Voice_Agent</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <h2>Hello from frontend !!</h2>
 
-    <button id="record-btn" onclick="showAlert()">Click Me</button>
-    
-</body> 
-<script src="script.js"></script>
+<body>
+    <div class="container">
+        <div class="day_1">
+            <h2>Hello from frontend !!</h2>
+
+            <button id="record-btn" class="btn" onclick="showAlert()">Click Me</button>
+        </div>
+
+        <!-- user input  -->
+
+        <div class="text_to_voice day_2">
+            <input type="text" placeholder="Enter text ......." id="user_input">
+            <button 
+                onclick="textToSpeech()" 
+                class="btn">Convert to voice
+            </button>
+            <audio id="audio" controls style="display: none"></audio>
+        </div>
+    </div>
+
+</body>
+
 </html>

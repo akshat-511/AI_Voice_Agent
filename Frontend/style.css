@@ -1,13 +1,41 @@
 *{
-    background-color: rgb(174, 252, 255);
+    background-color: rgb(221, 253, 255);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn{
-    padding: 3px;
+    padding: 5px;
     border: 2px solid black;
     border-radius: 10px;
+    font-size: 15px;
 }
 
 .btn:hover{
-    background-color: rgb(125, 243, 141);
+    background-color: rgb(96, 253, 96);
+}
+
+.text_to_voice{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    min-height: 20vh;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#user_input{
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
 }
